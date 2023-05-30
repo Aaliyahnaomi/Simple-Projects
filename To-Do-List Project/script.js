@@ -1,4 +1,4 @@
-// Select DOM elements
+
 const form = document.getElementById('todo-form');
 const input = document.getElementById('todo-input');
 const todoList = document.getElementById('todo-list');
@@ -26,6 +26,7 @@ function addTodoItem(event) {
 
     const deleteBtn = document.createElement('button');
     deleteBtn.innerText = 'Delete';
+    deleteBtn.classList.add('delete-btn');
     deleteBtn.addEventListener('click', function () {
       li.remove();
     });
